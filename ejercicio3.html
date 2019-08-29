@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const subsidio=97002;
+    var horas=parseInt(prompt("Digite cuantas horas trabajó"));
+    var valor=parseInt(prompt("Cuanto es el valor de la hora "));
+    var porc=parseInt(prompt("Digite porcentaje de comision "));
+    var ventas= parseInt(prompt("Digite monto total de ventas "));
+    
+     sueldo=ventas*(porc/100);
+     salinicial=(horas*valor);
+     sueldototal=(salinicial+sueldo);
+
+    document.write("<p>El porcentaje de comision es: "+porc+"</p>");                                      
+    document.write("<p>El sueldo inicial es: " + salinicial + "</p>");  
+    document.write("<p>El sueldo total es: " + sueldototal + "</p>"); 
+    if(sueldototal<=828116){
+        sueldototal=sueldototal+subsidio
+        console.log("Tiene subsidio de transporte");
+    } 
+    </script>
+</body>
+</html>
